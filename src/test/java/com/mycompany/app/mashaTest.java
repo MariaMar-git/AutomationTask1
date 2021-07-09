@@ -15,6 +15,7 @@ public class mashaTest {
     public static void userCanSearchKeywordWithGoogle() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\markouskaya_m\\IdeaProjects\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
+        //кроссбраузерность ? Не , не слышала )
         driver.manage().window().maximize();
         driver.get("http://uitestingplayground.com/classattr");
         driver.findElement(By.xpath("//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]")).click();
