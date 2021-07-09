@@ -25,6 +25,7 @@ public class mashaTest {
        // $(By.xpath("//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]")).click();
         System.out.println("Click button");
        WebDriver.Timeouts timeout = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+       //Таймауты у меня походу ничерта не работают
         Alert alert = driver.switchTo().alert();
         alert.accept();
         System.out.println("Click button ok");
